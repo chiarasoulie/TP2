@@ -36,8 +36,7 @@ public class TicketMachine {
 	 *
 	 * @return the price of tickets for this machine
 	 */
-	public int getPrice() {
-		return price;
+	public int getPrice() {return price;
 	}
 
 	/**
