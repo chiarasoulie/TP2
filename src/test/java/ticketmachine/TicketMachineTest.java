@@ -90,8 +90,7 @@ class TicketMachineTest {
 	@Test
 	// S10 : on ne peut pas créer de machine qui délivre des tickets dont le prix est négatif
 	void noPriceNegative(){
-		TicketMachine machine = new TicketMachine(-20);
-		assertThrows(IllegalArgumentException.class,()->{machine.getPrice();},"Le prix du ticket ne peut pas être négatif");
+		assertThrows(IllegalArgumentException.class,()->{new TicketMachine(-1);},"Le prix du ticket ne peut pas être négatif");
 	}
 
 
